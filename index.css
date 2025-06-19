@@ -291,3 +291,58 @@
     a {
       word-break: break-all;
     }
+
+    /* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 0.7rem 1rem;
+  }
+  nav a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  header {
+    padding-top: 3rem;
+    height: auto;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 32px 4vw;
+    margin: 1rem 0.5rem;
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .skills-grid,
+  .projects-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project img,
+  .skill-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .project-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-btns a {
+    min-width: unset;
+    width: 100%;
+    font-size: 0.98rem;
+    padding: 8px 0;
+  }
+}
+
+/* Optional: Make images and containers fit smaller screens */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
